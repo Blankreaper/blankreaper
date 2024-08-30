@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="sliderstyle.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+  </head>
+
+
+
+  <body>
+
+
+    <section class="slider-container">
+      <div class="slider-images">
+        
+        <div class="slider-img">
+          <img id="sliderimg" src="Images/uiux.jpg" alt="1" />
+          <h1 class="uiux" id="sliderh1">UI/UX DESIGN</h1>
+          <div class="details">
+            <h2 id="sliderh2">UI/UX DESIGN</h2>
+            <p id="sliderp">View Projects <i class="ri-external-link-line"></i></p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img id="sliderimg" src="Images/software developer.jpg" alt="2" />
+          <h1 class="soft" id="sliderh1">SOFTWARE DEVELOPMENT</h1>
+          <div class="details">
+            <h2 id="sliderh2">SOFTWARE DEVELOPMENT</h2>
+            <p id="sliderp">View Projects <i class="ri-external-link-line"></i></p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img id="sliderimg" src="Images/web develop.jpg" alt="3" />
+          <h1 class="web" id="sliderh1">WEB DEVELOPMENT</h1>
+          <div class="details">
+            <h2 id="sliderh2">WEB DEVELOPMENT</h2>
+            <p id="sliderp">View Projects <i class="ri-external-link-line"></i></p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img id="sliderimg" src="Images/graph des.jpg" alt="4" />
+          <h1 class="graph" id="sliderh1">GRAPHICS DESIGN</h1>
+          <div class="details">
+            <h2 id="sliderh2">GRAPHICS DESIGN</h2>
+            <p id="sliderp">View Projects <i class="ri-external-link-line"></i></p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img id="sliderimg" src="Images/edit.jpg" alt="5" />
+          <h1 class="edit" id="sliderh1">EDITING</h1>
+          <div class="details">
+            <h2 id="sliderh2">EDITING</h2>
+            <p id="sliderp">View Projects <i class="ri-external-link-line"></i></p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+
+    <script src="js/jQuery.js"></script>
+    
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
